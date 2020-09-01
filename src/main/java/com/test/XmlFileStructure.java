@@ -16,28 +16,29 @@ import java.io.FileOutputStream;
 import java.util.Scanner;
 
 /**
- * This class encapsulates xml file structure
+ * This class encapsulates xml file structure.
  */
 
 public class XmlFileStructure {
     final static Logger log = Logger.getLogger(XmlFileStructure.class);
     /**
-     * Root element of xml file
+     * Root element of xml file.
      */
     private Element dataBase;
     /**
-     * Child element of database
+     * Child element of database.
      */
     private Element table;
     private Document document;
 
     /**
-     * Creates structure of Xml
-     * @param document Argument which is uses to create structure of xml
+     * Creates structure of Xml.
+     * @param document Argument which is used to create structure of xml.
      */
     void createElements(Document document){
         log.info("Method createElements() called");
         dataBase = document.createElement("database");
+        dataBase.setAttribute("name","Company");
         table = document.createElement("table");
         table.setAttribute("name","Structure");
         document.appendChild(dataBase);
@@ -46,9 +47,9 @@ public class XmlFileStructure {
     }
 
     /**
-     * Creats new Document
+     * Creates new Document.
      * @return Document object
-     * @throws ParserConfigurationException Can be thrown if impossible to create Document
+     * @throws ParserConfigurationException Can be thrown if it's impossible to create Document.
      */
     Document getDocument() throws ParserConfigurationException {
         log.info("Method getDocument() called");
@@ -60,10 +61,9 @@ public class XmlFileStructure {
     }
 
     /**
-     * Gets file name from user
-     * Creates xml file
-     * @throws TransformerException Can be thrown if impossible to create xml file
-     * @throws FileNotFoundException Can be thrown if file name or path are incorrect
+     * Getting file name from user and creates xml file.
+     * @throws TransformerException Can be thrown if it's impossible to create xml file.
+     * @throws FileNotFoundException Can be thrown if file name or path are incorrect,
      */
     void createXml() throws TransformerException, FileNotFoundException {
         log.info("Method createXML() called");
@@ -81,16 +81,16 @@ public class XmlFileStructure {
     }
 
     /**
-     * Creates row element of xml file with values from database
+     * Creates row elements of xml file with values from database.
      * @see DBConnection
      * @see DBReader
+     * @see Document
      * @param rowValue setting row attribute value
      * @param doc object of Document
-     * @see Document
      * @param DepCode value from database column 1
      * @param DepJob value from database column 2
      * @param Description value from database column 3
-     * @return row
+     * @return Returning row element
      */
     static Node Row(int rowValue, Document doc, String DepCode, String DepJob, String Description) {
         log.info("Creating rows of xml");
@@ -109,8 +109,8 @@ public class XmlFileStructure {
     }
 
     /**
-     * Getter method for this object
-     * @return table
+     * Getter method for objects element.
+     * @return Returning table element.
      */
     public Element getTable() {
         return table;
