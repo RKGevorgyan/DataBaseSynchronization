@@ -2,7 +2,7 @@ package com.test;
 
 /**
  * This class Extends @see Exception
- * It will  be thrown if there is duplicates in List
+ * It will  be thrown if there are duplicates in List
  *
  */
 public class ListDuplicateException extends Exception{
