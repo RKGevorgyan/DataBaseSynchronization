@@ -1,0 +1,9 @@
+2020-08-28 00:48:31 INFO  com.test.ParseXml:26 - starting
+2020-08-28 00:48:31 INFO  com.test.ParseXml:30 - Object document created
+2020-08-28 00:48:31 INFO  com.test.ParseXml:32 - Object element created
+2020-08-28 00:49:47 INFO  com.test.ParseXml:26 - starting
+2020-08-28 00:49:47 INFO  com.test.ParseXml:30 - Object document created
+2020-08-28 00:49:47 INFO  com.test.ParseXml:32 - Object element created
+2020-08-28 00:58:52 INFO  com.test.ParseXml:26 - starting
+2020-08-28 00:58:52 INFO  com.test.ParseXml:30 - Object document created
+2020-08-28 00:58:52 INFO  com.test.ParseXml:32 - Object element created
