@@ -34,6 +34,7 @@ public class ParseXml {
      *             generating error message
      *
      * @see XmlFileStructure
+     * @throws ListDuplicateException Can be thrown if there are duplicates in two lists.
      */
     void parseXML(File file) throws ListDuplicateException {
         DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -89,7 +90,7 @@ public class ParseXml {
 
     /**
      * This method finding duplicates in List
-     * when list1 has duplicates at some index then <code>findDuplicates<code/>
+     * when list1 has duplicates at some index then findDuplicates
      * searching of duplicates in list2 with same index
      * If list2 has duplicates it throws com.test.ListDuplicateException
      * @see ListDuplicateException

@@ -36,9 +36,10 @@ public class XmlBdSync {
      * @see DBConnection
      * @see ParseXml
      * @see Scanner
+     * @see ListDuplicateException
      * @throws IOException  Can be thrown If such file doesn't exist.
-     * @throws SQLException Can be thrown if connection is lost or there are
-     *                      incorrect sql query.
+     * @throws SQLException Can be thrown if connection is lost or there are incorrect sql query.
+     * @throws ListDuplicateException Can be thrown if there are duplicates in two lists.
      */
     public static void synchronize() throws IOException, SQLException, ListDuplicateException {
         log.info("Method synchronize called");
