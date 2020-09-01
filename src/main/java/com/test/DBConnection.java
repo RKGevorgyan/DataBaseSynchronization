@@ -1,7 +1,4 @@
-package com.test; /**
- * This static class is getting connection to Database
- * Connection parameters are in @see data.property
- */
+package com.test;
 
 import org.apache.log4j.Logger;
 
@@ -12,6 +9,10 @@ import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
 
+/**
+ * This static class is getting connection to Database.
+ * Connection parameters are in @see data.property.
+ */
 public class DBConnection {
     final static Logger log = Logger.getLogger(DBConnection.class);
 
@@ -19,8 +20,8 @@ public class DBConnection {
      * This static method uses data.property
      * to get connection to Database
      * @return Connection
-     * @throws SQLException Can be thrown if connection parameters are incorrect
-     * @throws IOException Can be thrown if file path is incorrect
+     * @throws SQLException Can be thrown if connection parameters are incorrect.
+     * @throws IOException Can be thrown if file path is incorrect.
      */
     public static Connection getConnection() throws SQLException, IOException {
         Properties props = new Properties();

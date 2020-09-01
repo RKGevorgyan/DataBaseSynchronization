@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * The com.test.ParseXml class represents
- * functionality of getting values from .xml File
+ * functionality of getting values from .xml file.
  * @see XmlFileStructure
  */
 public class ParseXml {
@@ -28,7 +28,7 @@ public class ParseXml {
 
     /**
      * This method creates list with values from
-     * given xml file and saves them in three different ArrayList
+     * given xml file and saves them in three different ArrayList.
      * @param file xml file with the same structure as created file from database
      *             if file structure or name are incorrect it can be reason of
      *             generating error message

@@ -7,14 +7,14 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
- * Main class to start synchronization
- * Contains main method
+ * Main class to start synchronization.
+ * Contains main method.
  */
 public class SynchronizeMain {
     final static Logger log = Logger.getLogger(SynchronizeMain.class);
     /**
-     * start point of synchronization
-     * @param args Argument from command line
+     * Start point of synchronization.
+     * @param args Arguments from command line.
      */
     public static void main(String[] args){
 

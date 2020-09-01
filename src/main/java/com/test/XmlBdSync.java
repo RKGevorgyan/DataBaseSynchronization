@@ -15,9 +15,9 @@ import java.util.Scanner;
 /**
  * This class is uses static method to synchronize
  * database with given xml file.
- * Structure of xml must be the sam as generated from MainBDReader
- * If connection to database will be lost, Update operations
- * will be canceled
+ * Structure of xml must be the same as generated from MainBDReader.
+ * If connection to database will be lost, update operations
+ * will be canceled.
  * @see DBReader
  *
  */
@@ -26,18 +26,19 @@ public class XmlBdSync {
     final static Logger log = Logger.getLogger(XmlBdSync.class);
 
     /**
-     * This method gives synchronization algoritm with safe Update operations
-     * It uses Scanner to get file name and parse values
+     * This method gives synchronization algorithm with safe Update operations.
+     * It uses Scanner to get file name and parse values.
      * Synchronize() method using natural key of database(DepCode,DepJob)
-     * to Insert,Update and Delete rows
+     * to Insert,Update and Delete rows.
      * If database is empty, this method will Insert all values
-     * from given xml file to database
+     * from given xml file to database.
      * @see XmlFileStructure
      * @see DBConnection
      * @see ParseXml
-     * @throws IOException  Can be thrown If such file doesn't exist
-     * @throws SQLException Can be thrown if connection is lost or there
-     *                      incorrect sql query
+     * @see Scanner
+     * @throws IOException  Can be thrown If such file doesn't exist.
+     * @throws SQLException Can be thrown if connection is lost or there are
+     *                      incorrect sql query.
      */
     public static void synchronize() throws IOException, SQLException, ListDuplicateException {
         log.info("Method synchronize called");

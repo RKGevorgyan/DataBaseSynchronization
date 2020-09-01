@@ -13,8 +13,8 @@ import java.sql.Statement;
 
 /**
  * This class is getting values from Database
- * and convert them to .xml
- * For connection to database class uses com.test.DBConnection
+ * and convert them to xml.
+ * For connection to database, this class uses com.test.DBConnection
  * @see DBConnection
  *
  */
@@ -22,7 +22,7 @@ public class DBReader {
     final static Logger log = Logger.getLogger(DBReader.class);
 
     /**
-     * This method is creating xml from database
+     * This method is creating xml from database.
      * It can be interrupted if here some problems with
      * Database connection, incorrect file name, parse exception
      * @see XmlFileStructure
